@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken'); // 导入jsonwebtoken库
+const jwt = require('jsonwebtoken'); 
 const app = express();
 const bodyParser = require('body-parser');
 const port = 3001;
@@ -13,7 +13,7 @@ const nlpRouter = require('./routes/nlpRouter');
 const { processText } = require('./nlp/nlpHandler');
 const crypto = require('crypto');
 const multer = require('multer');
-const upload = multer({ dest: 'uploads/' }); // 创建multer实例来处理文件上传
+const upload = multer({ dest: 'uploads/' }); 
 const cors = require('cors');
 app.use(cors());
 app.use(express.json());
