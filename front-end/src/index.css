@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* 如果需要更改编辑器的字体样式，您可以通过下面的方式来实现 */
+.editor-style .tox-tinymce {
+  font-family: Arial, sans-serif;
+  /* 设置字体 */
+  font-size: 14px;
+  /* 设置字体大小 */
+}
+
+.editor-style {
+  margin-bottom: 1rem;
+  /* 添加样式使编辑器与其他输入框分隔开来 */
+}
+
+.editor-wrapper {
+  margin-bottom: 1rem;
+  width: 100%;
+  /* 设置为您希望的宽度值 */
+}
+
+
+.note-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.banner-image,
+.default-banner img {
+  width: 70vw;
+  height: 200px;
+  /* 根据需要调整高度 */
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.title-input {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.editor-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.image-input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tags-select,
+.visibility-select {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.save-button {
+  width: 150px;
+}
+
+.tox-toolbar {
+  position: fixed;
+  left: 20px;
+  /* 调整工具栏距离左侧的距离 */
+  top: 50%;
+  /* 将工具栏垂直居中 */
+  transform: translateY(-50%);
+  z-index: 9999;
+  /* 确保工具栏位于顶层 */
+}
+
+.main-page {
+  text-align: center;
+  /* 让文本水平居中显示 */
+}
+
+.greeting-text {
+  font-size: 18px;
+  font-family: 'Your Cute Font', cursive;
+  /* 替换成您喜欢的可爱字体 */
+  display: inline-block;
+  /* 使图标和文本在同一行显示 */
+}
+
+.icon-heart {
+  color: red;
+  /* 更改心形图标的颜色 */
+  margin-right: 8px;
+  /* 添加一些右边距以与文本分隔 */
+}
+
+.template-box {
+  height: 500px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* 添加 overflow 属性 */
+}
+
+.template-content {
+  transform: translateY(-10%) scale(0.7);
+  /* 调整缩放和向上偏移 */
+  transform-origin: top;
+  /* 设置变换原点为顶部 */
+  margin-top: 30%;
+  /* 调整顶部外边距以对齐图片 */
+  margin-left: -20%;
+  /* 将内容向左移动 10% */
+}
+
+
+.template-box img {
+  width: 100%;
+  /* 图片宽度占满父容器 */
+  border-radius: 5px;
+  /* 图片圆角 */
+  margin-bottom: 16px;
+  /* 图片下方外边距 */
+}
+
+.template-box h2 {
+  font-size: 1.5rem;
+  /* 标题字体大小 */
+  margin-bottom: 10px;
+  /* 标题下方外边距 */
+}
+
+.template-box p {
+  margin-bottom: 8px;
+  /* 段落下方外边距 */
+}
+
+.template-box ul {
+  margin-bottom: 8px;
+  /* 列表下方外边距 */
+}
+
+.template-box li {
+  margin-bottom: 4px;
+  /* 列表项下方外边距 */
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#000000">
+</head>
+
+<body>
+    <div id="root"></div> <!-- React 应用的根节点 -->
+    <div id="modal-root"></div> <!-- 用于渲染对话框的容器 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const rootContainer = document.getElementById('root');
+            if (rootContainer) {
+                // 使用 createRoot 渲染 React 应用
+                const root = createRoot(rootContainer);
+                root.render(<App />);
+            } else {
+                console.error('Root container not found');
+            }
+        });
+    </script>
+</body>
+
+</html>
